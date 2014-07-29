@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Recursively require node files",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --dir test/coverage -- -u exports -R spec"
   },
