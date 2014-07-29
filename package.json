@@ -1,0 +1,25 @@
+{
+  "name": "require-walk",
+  "version": "0.0.1",
+  "description": "Recursively require node files",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --dir test/coverage -- -u exports -R spec"
+  },
+  "keywords": [
+    "require",
+    "recursive",
+    "walk"
+  ],
+  "author": {
+    "name": "Rudi Starcevic",
+    "email": "rudi.starcevic@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.0",
+    "jshint": "^2.5.2",
+    "mocha": "^1.21.3"
+  }
+}
