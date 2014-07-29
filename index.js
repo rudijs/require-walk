@@ -42,7 +42,7 @@ module.exports = function (path) {
         else {
 
           // check for js or coffee file extention
-          if (/(.*)\.(js$|coffee$)/.test(file)) {
+          if (/(.*)\.(js$|coffee$)/.test(file) && !/spec/i.test(file)) {
 
             // require with arguments if there are arguments
             if (args.length) {
