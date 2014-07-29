@@ -4,7 +4,7 @@ require-walk
 Recursively require Node.js modules and apply optional parameters
 
 
-## Examples
+## Example uage
 
 Example 1: ExpressJS/KoaJS routes with parameters
 
@@ -16,13 +16,11 @@ Instead of this:
 
 You can do:
 
-    var requireRoutes = requireWalk('./routes');
-    requireRoutes(app);
+    requireWalk('./routes')(app);
 
 Example 2: MongooseJS models with no parameters
 
-    var requireModels = requireWalk('/models');
-    requireModels();
+    requireWalk('./models')();
 
 ## Tests with code coverage report in `test/coverage`
 

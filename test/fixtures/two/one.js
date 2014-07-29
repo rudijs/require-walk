@@ -1,6 +1,6 @@
 module.exports = function (app) {
   // Example this could be ExpressJS app configuration stuff
   if (app) {
-    app.testKey2 = 'testValue2';
+    app.testKey1 = 'testValue1';
   }
 }
