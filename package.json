@@ -1,6 +1,6 @@
 {
   "name": "require-walk",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Recursively require node files",
   "main": "index.js",
   "scripts": {
