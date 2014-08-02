@@ -1,6 +1,6 @@
 {
   "name": "require-walk",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Recursively require node files",
   "repository": {
     "type": "git",
