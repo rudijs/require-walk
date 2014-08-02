@@ -32,6 +32,8 @@ git clone the full repo
 
 ## Linting
 
-`./node_modules/jshint/bin/jshint index.js` 
+`./node_modules/jshint/bin/jshint index.js`
+ 
+`./node_modules/jshint/bin/jshint lib/*.js` 
 
-`./node_modules/jshint/bin/jshint test/requireWalk.spec.js`
+`./node_modules/jshint/bin/jshint test/*.spec.js`

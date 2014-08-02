@@ -8,7 +8,7 @@ describe('Require Walk', function () {
 
   it('requires modules and applies parameters', function (done) {
 
-    requireWalk('./test/fixtures/one')();
+    requireWalk(__dirname + '/fixtures/one')();
 
     // Nothing returned, just assert true
     true.should.be.true;
@@ -21,7 +21,7 @@ describe('Require Walk', function () {
 
     var app = {};
 
-    requireWalk('./test/fixtures/two')(app);
+    requireWalk(__dirname + '/fixtures/two')(app);
 
     should.exist(app.testKey1);
     app.testKey1.should.equal('testValue1');
@@ -35,7 +35,7 @@ describe('Require Walk', function () {
 
   it('recursively requires modules', function (done) {
 
-    requireWalk('./test/fixtures/three')();
+    requireWalk(__dirname + '/fixtures/three')();
 
     // Nothing returned, just assert true
     true.should.be.true;
