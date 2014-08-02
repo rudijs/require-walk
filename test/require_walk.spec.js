@@ -1,10 +1,31 @@
 'use strict';
 
-var should = require('chai').should();
+var should = require('chai').should(),
+  expect = require('chai').expect;
 
 var requireWalk = require('..');
 
 describe('Require Walk', function () {
+
+  it('only accepts only a string type parameter', function (done) {
+
+    var fn = function () {
+      return requireWalk(123)();
+    }
+
+    expect(fn).to.throw(/path\ \(string\)\ is\ required/);
+    done();
+  });
+
+  it('accepts only a valid directory path', function (done) {
+
+    var fn = function () {
+      return requireWalk('/does/not/exist/')();
+    }
+
+    expect(fn).to.throw(/Invalid\ pat/);
+    done();
+  });
 
   it('requires modules and applies parameters', function (done) {
 
