@@ -23,7 +23,7 @@ describe('Require Walk', function () {
       return requireWalk('/does/not/exist/')();
     }
 
-    expect(fn).to.throw(/Invalid\ pat/);
+    expect(fn).to.throw(/Invalid\ path/);
     done();
   });
 
