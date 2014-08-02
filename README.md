@@ -1,6 +1,8 @@
 require-walk
 ============
 
+[![Build Status](https://travis-ci.org/rudijs/require-walk.svg?branch=master)](https://travis-ci.org/rudijs/require-walk)
+
 Recursively require Node.js modules and apply optional parameters
 
 
@@ -16,11 +18,11 @@ Instead of this:
 
 You can do:
 
-    requireWalk('./routes')(app);
+    requireWalk(__dirname + '/routes')(app);
 
 Example 2: MongooseJS models with no parameters
 
-    requireWalk('./models')();
+    requireWalk(__dirname + '/models')();
 
 ## Tests with code coverage report in `test/coverage`
 
