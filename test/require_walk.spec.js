@@ -1,7 +1,7 @@
 'use strict';
 
 var should = require('chai').should(),
-  expect = require('chai').expect;
+  expectJs = require('chai').expect;
 
 var requireWalk = require('..');
 
@@ -11,9 +11,9 @@ describe('Require Walk', function () {
 
     var fn = function () {
       return requireWalk(123)();
-    }
+    };
 
-    expect(fn).to.throw(/path\ \(string\)\ is\ required/);
+    expectJs(fn).to.throw(/path\ \(string\)\ is\ required/);
     done();
   });
 
@@ -21,9 +21,9 @@ describe('Require Walk', function () {
 
     var fn = function () {
       return requireWalk('/does/not/exist/')();
-    }
+    };
 
-    expect(fn).to.throw(/Invalid\ path/);
+    expectJs(fn).to.throw(/Invalid\ path/);
     done();
   });
 
