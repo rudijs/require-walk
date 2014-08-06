@@ -19,9 +19,13 @@ Instead of this:
 
 You can do:
 
+    var requireWalk = require('require-walk');
+
     requireWalk(__dirname + '/routes')(app);
 
 Example 2: MongooseJS models with no parameters
+
+    var requireWalk = require('require-walk');
 
     requireWalk(__dirname + '/models')();
 
@@ -35,8 +39,6 @@ git clone the full repo
 
 ## Linting
 
-`./node_modules/jshint/bin/jshint index.js`
- 
 `./node_modules/jshint/bin/jshint lib/*.js` 
 
 `./node_modules/jshint/bin/jshint test/*.spec.js`
