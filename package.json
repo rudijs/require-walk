@@ -1,7 +1,7 @@
 {
   "name": "require-walk",
-  "version": "0.1.6",
-  "description": "Recursively require node files",
+  "version": "0.1.7",
+  "description": "Recursively require Node.js modules and apply optional parameters",
   "repository": {
     "type": "git",
     "url": "https://github.com/rudijs/require-walk.git"
