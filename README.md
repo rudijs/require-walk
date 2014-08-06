@@ -6,6 +6,7 @@ Recursively require Node.js modules and apply optional parameters
 [![Build Status](https://travis-ci.org/rudijs/require-walk.svg?branch=master)](https://travis-ci.org/rudijs/require-walk)  
 [![NPM version](https://badge.fury.io/js/require-walk.svg)](http://badge.fury.io/js/require-walk)  
 [![Dependency Status](https://gemnasium.com/rudijs/require-walk.svg)](https://gemnasium.com/rudijs/require-walk)
+[![Coverage Status](https://coveralls.io/repos/rudijs/require-walk/badge.png?branch=master)](https://coveralls.io/r/rudijs/require-walk?branch=master)
 
 ## Example uage
 
@@ -19,9 +20,13 @@ Instead of this:
 
 You can do:
 
+    var requireWalk = require('require-walk');
+
     requireWalk(__dirname + '/routes')(app);
 
 Example 2: MongooseJS models with no parameters
+
+    var requireWalk = require('require-walk');
 
     requireWalk(__dirname + '/models')();
 
@@ -35,8 +40,6 @@ git clone the full repo
 
 ## Linting
 
-`./node_modules/jshint/bin/jshint index.js`
- 
 `./node_modules/jshint/bin/jshint lib/*.js` 
 
 `./node_modules/jshint/bin/jshint test/*.spec.js`
