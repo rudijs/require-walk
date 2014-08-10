@@ -1,6 +1,6 @@
 {
   "name": "require-walk",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Recursively require Node.js modules and apply optional parameters",
   "repository": {
     "type": "git",
